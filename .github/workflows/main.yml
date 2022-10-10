@@ -22,7 +22,7 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: deedy_resume-openfont.tex
-          working_directory: docs 
+          working_directory: / 
       - name: stash pdf
         run: |
           mv deedy_resume-openfont.pdf $HOME # cache the file
