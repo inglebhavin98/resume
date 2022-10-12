@@ -1,0 +1,21 @@
+name: Build Latex
+on:
+  push:
+    branches: [ main ]
+jobs:
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    steps:
+          - name: Check out latest version of main branch
+          - uses: actions/checkout@v2
+          - name: Github Action for LaTeX
+            uses: xu-cheng/latex-action@v2
+            with:
+              root_file: deedy_resume-openfont.tex
+              latexmk_use_lualatex: true
+          - name: PDF....
+          - uses: actions/upload-artifact@v3
+            with:
+              name: PDF
+              path: main.pdf
