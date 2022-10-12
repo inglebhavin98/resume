@@ -3,6 +3,28 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass[]{deedy-resume-openfont}
+\usepackage{tikz}
+
+\newcommand{\ExternalLink}{%
+    \tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{% 
+        \begin{scope}[x=1ex, y=1ex]
+            \clip (-0.1,-0.1) 
+                --++ (-0, 1.2) 
+                --++ (0.6, 0) 
+                --++ (0, -0.6) 
+                --++ (0.6, 0) 
+                --++ (0, -1);
+            \path[draw, 
+                line width = 0.5, 
+                rounded corners=0.5] 
+                (0,0) rectangle (1,1);
+        \end{scope}
+        \path[draw, line width = 0.5] (0.5, 0.5) 
+            -- (1, 1);
+        \path[draw, line width = 0.5] (0.6, 1) 
+            -- (1, 1) -- (1, 0.6);
+        }
+    }
 \begin{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -15,8 +37,9 @@
 %     TITLE NAME
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\namesection{Bhavin}{Ingle}{ \urlstyle{same}\url{http://inglebhavin98.github.io} | Github:// \href{https://github.com/inglebhavin98}{\custombold{inglebhavin98}} \\
-\href{mailto:inglebhavin98@gmail.com}{inglebhavin98@gmail.com} | +91-7567288994 | LinkedIn:// \href{https://www.linkedin.com/in/inglebhavin98/}{\custombold{inglebhavin98}}}
+\namesection{Bhavinn}{Ingle}
+% \urlstyle{same}\url{http://inglebhavin98.github.io} | Github:// \href{https://github.com/inglebhavin98}{\custombold{inglebhavin98}}
+{\href{mailto:inglebhavin98@gmail.com}{inglebhavin98@gmail.com} | +91-7567288994 | LinkedIn:// \href{https://www.linkedin.com/in/inglebhavin98/}{\custombold{inglebhavin98}}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     COLUMN ONE
@@ -84,19 +107,19 @@
 % \subsection{Programming}
 % \location{Over 5000 lines:}
 \vspace{1.5mm}
-Javascript \textbullet{}   ReactJS \textbullet{} NextJS \textbullet{} Typescript \\
-% \location{Over 1000 lines:}
-HTML \textbullet{} CSS \textbullet{} Python \textbullet{} \LaTeX\\\
+Javascript \textbullet{} React \textbullet{} NextJS \textbullet{} Typescript
+\textbullet{} HTML, CSS \textbullet{} Python \textbullet{} \LaTeX\\\
 % \location{Familiar:}
-MobX \textbullet{} MUI \textbullet{} Embedded C \textbullet{} MySQL
+MobX \textbullet{} MUI \textbullet{} Embedded C \textbullet{} IoT
 \sectionsep
 
 \section{Publications}
-Implementation of Virtual OPC on Cloud \textbullet{} 
-{\footnotesize \textit{\textbf{\custombold{TENCON 2019} IEEE Region 10 Flagship International Conference, Kochi, IN}}}\\
+
+\href{https://ieeexplore.ieee.org/document/8929398}{Implementation of Virtual OPC on Cloud}\textbullet{} 
+{\footnotesize \textit{\textbf{\custombold{TENCON 2019} IEEE Region 10 Flagship International Conference, Kochi, IN}}} \ExternalLink\\
 \vspace{1.5mm}
-Aquaculture Monitoring and Feedback System \textbullet{}
-{\footnotesize \textit{\textbf{IEEE International Symposium on Smart Electronic Systems (\custombold{iSES}), NIT-R, IN}}}\\
+\href{https://ieeexplore.ieee.org/abstract/document/9002485}{Aquaculture Monitoring and Feedback System}\textbullet{}
+{\footnotesize \textit{\textbf{IEEE International Symposium on Smart Electronic Systems (\custombold{iSES}), NIT-R, IN}}} \ExternalLink\\
 \vspace{1.5mm}
 Dimension Estimation Using Image Processing \textbullet{}
 {\footnotesize \textit{\textbf{IEEE Sponsored (\custombold{GCAT}), Banglore, IN}}}
@@ -136,9 +159,9 @@ automated detection \& profiling of waste \\Prov. App: 202021006460, Oct 2021, I
 \sectionsep
 \section{Awards}
 \small{
-\textbullet{} 2\textsuperscript{nd} Nationally at 4\textsuperscript{th} Mitsubishi Electric Cup held at Delhi, 2019\\
+\textbullet{} \textbf{\href{https://mitsubishielectric.in/fa/mecup/winners.php}{2\textsuperscript{nd} Nationally at 4\textsuperscript{th} Mitsubishi Electric Cup held at Delhi, 2019}} \ExternalLink\\
 \vspace{1mm}
-\textbullet{} Hall of Fame in DST \& TI’s IICDC held at NSRCEL IIM-B, 2019\\
+\textbullet{} \textbf{\href{https://blog.mygov.in/wp-content/uploads/2019/08/Top-30-Finalists_Wall-Of-Fame.pdf}{Hall of Fame in DST \& TI’s IICDC held at NSRCEL IIM-B, 2019}} \ExternalLink\\
 \vspace{1mm}
 \textbullet{} Semi-Finalist in Arm Design Challenge held at IIIT -B, 2019\\
 }
@@ -160,7 +183,7 @@ automated detection \& profiling of waste \\Prov. App: 202021006460, Oct 2021, I
 \section{Experience}
 % 1. TDL
 \vspace{1mm}
-\runsubsection{Tata Neu}
+\runsubsection{\href{https://tatadigital.com/}{Tata Neu \ExternalLink}}
 \descript{| Sr. Digital Engineer}
 \location{Sept 2020 – Present | Mumbai, IN}
 \vspace{1.5mm}
@@ -189,11 +212,11 @@ automated detection \& profiling of waste \\Prov. App: 202021006460, Oct 2021, I
 }
 \sectionsep
 % 2. ZES
-\runsubsection{Zargun ES}
+\runsubsection{\href{https://in.linkedin.com/company/zargun-es}{Zargun ES \ExternalLink}}
 % \descript{| Product Development \& Engineering}
 \descript{| Co-founder \& Product Development Lead}
 \vspace{0.5mm}
-\location{Oct 2019 – Oct 2022 | Mumbai, IN | \textbf{\href{https://www.hindustantimes.com/brand-post/indian-social-enterprises-make-headway-at-sif-s-yse-global-programme-2021-101634649509304.html}{News article}}}
+\location{Oct 2019 – Oct 2022 | Mumbai, IN}
 \vspace{1.5mm}
 \small {
 %%%%%%%%
@@ -201,11 +224,11 @@ automated detection \& profiling of waste \\Prov. App: 202021006460, Oct 2021, I
 \hspace{2mm} \textbullet{} Oversaw the techical team for products - Waste sensor, segregators, spectral sensing\\
 \hspace{2mm} \textbullet{} Evaluated business case, product-fit, features, pitching in multiple events, competitions, etc.\\
 \hspace{2mm} \textbullet{} Pilots completed - TetraPack-Bin \& Compost sensor with RuR Greenlife(Mumbai), MilkBag\\
-\hspace{4.5mm} Project at Bay View Marina Garden, Cuff Parade, Swachh(Pune), HasiruDala(Blr) \\
+\hspace{4.5mm} Project at Cuff Parade(Mumbai), Swachh(Pune), HasiruDala(Blr) \\
 %%%%%%%%
 \vspace{1mm}
 \custombold{Accomplishments}\\
-\hspace{2mm} \textbullet{} Top 15 Social Enterprises(SEs) in Singapore International Foundation(SIF) YSE'21\\
+\hspace{2mm} \textbullet{} \textbf{\href{https://www.hindustantimes.com/brand-post/indian-social-enterprises-make-headway-at-sif-s-yse-global-programme-2021-101634649509304.html}{Top 15 Social Enterprises(SEs) in Singapore International Foundation(SIF) YSE'21 }\ExternalLink}\\
 % \hspace{2mm} \textbullet{} Top 100 startups in Maharashtra Startup Week 2021\\
 \hspace{2mm} \textbullet{} Winner of STPI CHUNAUTI – NGIS‘21 [Optional Seed (US\$34000) + Grant(US\$2500)\\
 \hspace{2mm} \textbullet{} Top 10 startups in NXP Tech Startup Challenge'21 (Award: Hardware Support US \$650)\\
@@ -231,8 +254,8 @@ automated detection \& profiling of waste \\Prov. App: 202021006460, Oct 2021, I
 \section{Research \& Projects}
 % 1
 % \runsubsection{Aquacare | TI India \& IIM-B (IICDC)}
-\descript{Aquacare | TI India \& IIM-B (IICDC) | Funded - US\$6700 | \footnotesize {Github link}} 
-\location{DEC 2018 - JULY 2019 | Bangalore, IN | Mentor - Prof YS Rao, SPIT}
+\descript{Aquacare | TI India \& IIM-B (IICDC) | Funded - US\$6700} 
+\location{DEC 2018 - JULY 2019 | Bangalore, IN | Mentor - \textbf{\href{https://extc.spit.ac.in/faculty/prof-y-s-rao/}{Prof YS Rao, SPIT}} \ExternalLink}
 % \begin{tightemize}
 % \end{tightemize}
 \small {
@@ -247,8 +270,9 @@ automated detection \& profiling of waste \\Prov. App: 202021006460, Oct 2021, I
 % 2
 % \runsubsection{Mitsubishi Electric Cup'19}
 \vspace{2mm}
-\descript{Mitsubishi Electric Cup'19 | Funded - US\$2700 | \footnotesize {Github link}}
-\location{NOV'18 - FEB'19 | Pune \& Delhi, IN | Mentor - Mr Santosh K of MEI}
+% \descript{Mitsubishi Electric Cup'19 | Funded - US\$2700 | \footnotesize {Github link}}
+\descript{Mitsubishi Electric Cup'19 | Funded - US\$2700}
+\location{NOV'18 - FEB'19 | Pune \& Delhi, IN | Mentor - \textbf{\href{https://in.linkedin.com/in/santosh-kulkarni-72a881134}{Mr Santosh K of MEI}} \ExternalLink}
 \small {
 \hspace{2mm}  \textbullet{} Realised an IoT system that uses robotic-arm for Palletizing based on package dimensions.\\
 \hspace{2mm}  \textbullet{} Implemented a dimensioning algo \& an virtual OPC server for realizing the IIoT system\\
@@ -257,7 +281,8 @@ automated detection \& profiling of waste \\Prov. App: 202021006460, Oct 2021, I
 % 3
 % \runsubsection{ARM Design Challenge}
 \vspace{2mm}
-\descript{AUTOMATA (OBD Scanner) | ARM Design Challenge | \footnotesize {Github link}}
+% \descript{AUTOMATA (OBD Scanner) | ARM Design Challenge | \footnotesize {Github link}}
+\descript{AUTOMATA (OBD Scanner) | ARM Design Challenge}
 \location{SEP 2018 - JAN 2019 | IIIT, Bangalore, IN}
 \small {
 \hspace{2mm}  \textbullet{} Prototyped a plug-n-play device for OBD-II ports of automobiles to access vehicle data,\\
@@ -269,8 +294,9 @@ automated detection \& profiling of waste \\Prov. App: 202021006460, Oct 2021, I
 %4
 % \runsubsection{CyberSec Lab - SPIT}
 \vspace{2mm}
-\descript{CyberSec Lab - SPIT | Undergraduate Research Project | \footnotesize {Github link}}
-\location{JUN'19 - MAY'20 | SPIT, Mumbai, IN | Mentor - Prof Ambawade, SPIT}
+% \descript{CyberSec Lab - SPIT | Undergraduate Research Project | \footnotesize {Github link}}
+\descript{CyberSec Lab - SPIT | Undergraduate Research Project}
+\location{JUN'19 - MAY'20 | SPIT, Mumbai, IN | Mentor - \textbf{\href{https://extc.spit.ac.in/faculty/prof-dayanand-ambawade/}{Prof Ambawade, SPIT}} \ExternalLink}
 \small {
 \hspace{2mm}  \textbullet{} Created addon for SPIT's internal NIDS (Network Intrusion Detection System) which\\
 \hspace{5mm} used a ML Engine to Identify threats by Correlation \& Classification of network alerts\\
